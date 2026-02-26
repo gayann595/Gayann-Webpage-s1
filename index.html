@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index | Gay Ann Clarke</title>
+
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Page-specific modern styling -->
+  <style>
+    :root{
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --brand: #2563eb;
+      --border: #e5e7eb;
+      --shadow: 0 10px 25px rgba(0,0,0,.08);
+      --radius: 16px;
+    }
+
+    *{ box-sizing: border-box; }
+    body{
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #eef2ff 0%, var(--bg) 45%, #ffffff 100%);
+      line-height: 1.6;
+    }
+
+    header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(90deg, var(--purple-dark), var(--purple));
+  border-bottom: 2px solid var(--yellow);
+  backdrop-filter: none;
+}
+
+header h1,
+header nav a{
+  color: #fff !important;
+}
+
+header nav a.active{
+  color: var(--purple-dark) !important;
+}
+
+    nav ul{
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      justify-content: flex-end;
+    }
+
+    nav a{
+      text-decoration: none;
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 14px;
+    }
+
+    nav a:hover{
+      border-color: var(--border);
+      background: #ffffff;
+    }
+
+    main{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 42px 16px 28px;
+    }
+
+    .hero-title{
+      margin: 0 0 18px;
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .profile-img{
+      width: 140px;
+      height: 140px;
+      border-radius: 999px;
+      object-fit: cover;
+      border: 3px solid #fff;
+      box-shadow: 0 8px 18px rgba(0,0,0,.12);
+      display: block;
+    }
+
+    .name-line{
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .subline{
+      margin: 4px 0 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .about{
+      margin: 0;
+      color: #111827;
+      font-size: 15.5px;
+    }
+
+    .actions{
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .btn-primary{
+      background: var(--brand);
+      color: #fff;
+      border-color: var(--brand);
+    }
+
+    .btn:hover{
+      transform: translateY(-1px);
+      transition: transform .15s ease;
+    }
+
+    .note{
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 14px;
+      background: #f8fafc;
+      border: 1px dashed #cbd5e1;
+      color: #334155;
+      font-size: 14px;
+    }
+
+    footer{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 16px 30px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Mobile */
+    @media (max-width: 680px){
+      .header-inner{
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul{ justify-content: flex-start; }
+      .card{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: left;
+      }
+      .profile-img{ width: 130px; height: 130px; }
+      .content{ width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a class="brand" href="index.html">
+        <img src="../Assets/logo.png" alt="Site logo">
+        <span>Gay Ann Clarke</span>
+      </a>
+      <h1>Welcome To Gay Ann's Domain</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Index</a></li>
+          <li><a href="Professional.html">Professional</a></li>
+          <li><a href="Personality.html">Personality</a></li>
+          <li><a href="Personal Development.html">Personal Development</a></li>
+          <li><a href="storyboard.html">Storyboard</a></li>
+          <li><a href="reference.html">Reference</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="hero-title">Welcome to My Portfolio</h2>
+
+    <section class="card" aria-label="About Gay Ann Clarke">
+      <!-- Image + email link -->
+      <a href="mailto:gayann_clarke@yahoo.com" title="Email Gay Ann">
+        <img
+          src="../Assets/img1.jpeg"
+          alt="Profile photo of Gay Ann Clarke"
+          class="profile-img"
+        />
+      </a>
+
+      <div class="content">
+        <p class="name-line">Gay Ann Clarke</p>
+        <p class="subline">Computer Networking & Security (Cybersecurity) University of Technology, Jamaica</p>
+
+    <p class="about">
+    Hi, my name is Gay Ann Clarke. I am 28 years old, born on October 2, 1997, in the parish of Manchester, Jamaica.</P>
+   
+   <P>I am the youngest of five girls from my mother and second born of twins, which has played a significant role in shaping who I am today.
+          <br /><br />
+  I spent most of my life in Chapelton, where my mother is from. I attended primary school and later Clarendon College, where I completed my high school education.
+  My journey through school was not without its challenges. As a person with a physical disability, I experienced a number of obstacles along the way.
+ However, these experiences strengthened my resilience, determination, and commitment to achieving my goals.
+          <br /><br />
+    After completing high school, I matriculated to the Caribbean Maritime University in conjunction with HEART/NSTA Trust,
+    where I successfully completed studies in ICT and Digitalization. Building on that foundation, I am currently pursuing a Bachelor’s degree in Computer Networking and Security,
+    majoring in Cybersecurity, at the University of Technology, Jamaica, where I continue to develop my knowledge and skills in the field of technology.
+   </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:gayann_clarke@yahoo.com"target="_blank">Email Me</a>
+          <a class="btn" href="https://www.utech.edu.jm/" target="_blank" rel="noopener noreferrer">Visit Utech</a>
+    
+	
+	
+	
+       <h2 class="section-title">Favourites</h2> <br> </br>
+      <p class="section-sub">A few things I enjoy (card-style section).</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Book: Twelve Pillars</h3>
+          <p>A personal development book that teaches responsibility, discipline, and purposeful living.</p>
+        </article>
+        <article class="card">
+          <h3>Movie: Hidden Figures</h3>
+          <p>An inspiring story about persistence, excellence, and overcoming barriers through education.</p>
+        </article>
+        <article class="card">
+          <h3>Song: Count on Me</h3>
+          <p>A reminder about loyalty and having people you can depend on during challenging times.</p>
+        </article>
+      </div>
+    </section>
+        </div>
+
+        <div class="note">
+          Tip: Click my photo to email me quickly.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Gay Ann Clarke</p>
+  
+    <p><a href="#top">Back to top</a></p>
+</footer>
+</body>
+</html>

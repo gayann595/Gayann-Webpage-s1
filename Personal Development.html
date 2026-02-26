@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Development | Gay Ann Clarke</title>
+  <link rel="stylesheet" href="../style.css" />
+
+  <style>
+    :root{
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#64748b;
+      --accent:#0ea5e9;       /* different accent than the other page */
+      --accent2:#22c55e;      /* subtle secondary accent */
+      --border:#e2e8f0;
+      --shadow:0 12px 28px rgba(2,6,23,.08);
+      --radius:18px;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 450px at 10% 0%, rgba(14,165,233,.18), transparent 60%),
+        radial-gradient(900px 450px at 90% 20%, rgba(34,197,94,.12), transparent 55%),
+        linear-gradient(180deg, #ffffff 0%, var(--bg) 40%, #ffffff 100%);
+      line-height:1.7;
+    }
+	
+header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(90deg, var(--purple-dark), var(--purple));
+  border-bottom: 2px solid var(--yellow);
+  backdrop-filter: none;
+}
+
+header h1,
+header nav a{
+  color: #fff !important;
+}
+
+header nav a.active{
+  color: var(--purple-dark) !important;
+}
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      padding:0;
+      margin:0;
+      justify-content:flex-end;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:var(--text);
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid transparent;
+      font-size:14px;
+    }
+
+    nav a:hover{
+      background:#fff;
+      border-color:var(--border);
+    }
+
+    nav a.active{
+      background:rgba(14,165,233,.12);
+      border-color:rgba(14,165,233,.25);
+      color:#0369a1;
+      font-weight:900;
+    }
+
+    main{
+      max-width:1100px;
+      margin:0 auto;
+      padding:44px 16px 28px;
+    }
+
+    .page-title{
+      margin:0 0 8px;
+      font-size:clamp(26px, 3vw, 38px);
+      font-weight:950;
+      letter-spacing:-0.6px;
+    }
+
+    .page-subtitle{
+      margin:0 0 22px;
+      color:var(--muted);
+      max-width:85ch;
+      font-size:15px;
+    }
+
+    .panel{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+
+    .chapters{
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+
+    .chapter{
+      grid-column: span 12;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 10px 22px rgba(2,6,23,.06);
+      padding: 18px 18px 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* distinct chapter style: left accent bar */
+    .chapter::before{
+      content:"";
+      position:absolute;
+      left:0; top:0; bottom:0;
+      width:6px;
+      background: linear-gradient(180deg, var(--accent), var(--accent2));
+      opacity:.95;
+    }
+
+    .chapter h3{
+      margin:0 0 10px 0;
+      padding-left: 6px;
+      font-size:16px;
+      font-weight:950;
+      letter-spacing:-0.2px;
+    }
+
+    .chapter p{
+      margin: 10px 0 0;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    .chapter p strong{
+      color:#0b1220;
+    }
+
+    /* subtle separators inside each chapter */
+    .chapter .divider{
+      height:1px;
+      background: var(--border);
+      margin: 12px 0;
+    }
+
+    footer{
+      max-width:1100px;
+      margin:0 auto;
+      padding:20px 16px 30px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    @media (max-width: 900px){
+      .header-inner{ flex-direction:column; align-items:flex-start; }
+      nav ul{ justify-content:flex-start; }
+      .panel{ padding:18px; }
+    }
+  </style>
+</head>
+
+<body>
+  <a id="top"></a>
+  <header>
+    <div class="navbar">
+      <a class="brand" href="index.html">
+        <img src="../Assets/logo.png" alt="Site logo">
+        <span>Gay Ann Clarke</span>
+      </a>
+      <h1>Welcome To Gay Ann's Domain</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Index</a></li>
+          <li><a href="Professional.html">Professional</a></li>
+          <li><a href="Personality.html">Personality</a></li>
+          <li><a class="active" href="Personal Development.html">Personal Development</a></li>
+          <li><a href="storyboard.html">Storyboard</a></li>
+          <li><a href="reference.html">Reference</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="page-title">Personal Development</h2>
+    <p class="page-subtitle">
+      Personal Development - Twelve Pillars Reflection
+    </p>
+
+    <section id="development" class="panel">
+      <h2 style="margin:0; font-size:18px; font-weight:950;">
+        Personal Development - Twelve Pillars Reflection
+      </h2>
+
+      <div class="chapters">
+
+        <div class="chapter">
+          <h3>Chapter 4: Personal Development</h3>
+          <p><strong>Summary:</strong> In this chapter of <em>The Twelve Pillars</em>, Jim Rohn teaches that success begins with personal development. He emphasizes that income and achievement rarely exceed personal growth. If we want our lives to improve, we must improve ourselves first. Growth is intentional. It requires discipline, learning, self-reflection, and the courage to change. Success is not something we chase; it is something we attract by becoming better internally.</p>
+
+          <div class="divider"></div>
+
+          <p><strong>Personal Application:</strong> Personal development for me has never been optional it has been survival. I was diagnosed with cerebral palsy diplegia at a tender age. My mother carried me on her back to school when I could not walk long distances. I endured surgeries that were meant to correct my condition but instead left my ligaments weaker. I spent almost a year in a coma. When I woke up, I did not wake up to a “normal” childhood I woke up to a wheelchair.</p>
+
+          <p>There were moments I could have given up. Moments when discrimination, financial hardship, and physical pain felt heavier than hope. But I remembered <strong>Romans 8:28</strong> — “And we know that all things work together for good to them that love God.” I realized that my growth would not come from comfort but from pressure. Every surgery, every setback, every delay became a tool shaping my character. I returned to school after missing months due to hospital stays. I went back to finish school. I pursued ICT certifications among others and continued my BSc in Computer Network & Security. My body may have limitations, but my mind and spirit refuse to be limited. Through it all, I am becoming stronger, wiser, and more resilient. My development is my victory.</p>
+        </div>
+
+        <div class="chapter">
+          <h3>Chapter 5: Goal Setting</h3>
+          <p><strong>Summary:</strong> This chapter highlights the importance of writing down goals. Goals give direction and purpose. Without goals, life becomes reactive instead of intentional. The authors explain that goals are powerful not just because of what we achieve, but because of who we become in the process of achieving them.</p>
+
+          <div class="divider"></div>
+
+          <p><strong>Personal Application:</strong> I remember one rainy day clearly. I was on my way to Mathematics class, struggling to open the gate while rain poured down on me. Someone stood nearby laughing, saying that I would never get an “A.” In that moment, soaked and humiliated, I looked up and spoke to God. I declared that this would be the last time I returned to that class I would pass.</p>
+
+          <p>That moment was not just about passing a subject; it was about reclaiming my confidence. I held on to <strong>Philippians 4:13</strong>  “I can do all things through Christ who strengthens me.” And I did pass. That victory taught me that goals must be declared boldly and pursued relentlessly. My goals now are bigger: completing my degree at the University of Technology, Jamaica, becoming financially independent, and creating opportunities for myself and others with disabilities. Even when financial aid was denied and accommodations were uncertain, I remembered <strong>Jeremiah 29:11</strong> “For I know the plans I have for you… plans to prosper you and not to harm you.” My goals are rooted not just in ambition but in faith.</p>
+        </div>
+
+        <div class="chapter">
+          <h3>Chapter 6: The Importance of the Right Associations</h3>
+          <p><strong>Summary:</strong> This chapter teaches that the people we surround ourselves with shape our future. Associations influence mindset, confidence, and direction. To grow, we must align ourselves with those who inspire and challenge us.</p>
+
+          <div class="divider"></div>
+
+          <p><strong>Personal Application:</strong> I have experienced both neglect and loyalty. My father wasn’t around because he believed he could not handle raising a child with a disability. But my mother stayed. She carried me. She pushed my wheelchair. She went up and down hills to make sure I received an education. Her strength became my example of unconditional love and sacrifice.</p>
+
+          <p>Along my journey, I faced people who doubted my abilities. Some employers saw my walker before they saw my qualifications. Yet God placed mentors, programs, and opportunities in my path TEF, USF, HEART/NSTA Trust, Caribbean Maritime University amon others, and now UTech. These associations strengthened me. I hold onto <strong>Proverbs 27:17</strong>  “Iron sharpeneth iron; so a man sharpeneth the countenance of his friend.” I am learning to surround myself with people who sharpen, not weaken, my purpose.</p>
+        </div>
+
+        <div class="chapter">
+          <h3>Chapter 7: The Power of Attitude</h3>
+          <p><strong>Summary:</strong> This chapter explains that attitude determines success. We cannot control every circumstance, but we can control our response. A positive attitude transforms obstacles into opportunities.</p>
+
+          <div class="divider"></div>
+
+          <p><strong>Personal Application:</strong> There were nights I cried silently. Nights when financial pressure felt unbearable. Nights when I questioned why my journey had to be so difficult. Yet each time, I found strength in <strong>Isaiah 40:31</strong> — “But they that wait upon the Lord shall renew their strength; they shall mount up with wings as eagles.”</p>
+
+          <p>I learned that my disability does not define my destiny. My attitude does. I chose faith over bitterness. I chose perseverance over self-pity. I chose to believe that my story is not one of limitation but of divine purpose. Even now, facing accommodation struggles and student loan repayment uncertainty, I remind myself that God did not bring me this far to leave me. My life is not easy, but it is meaningful. And I will continue walking slowly if I must, but forward always.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Gay Ann Clarke</p>
+  
+    <p><a href="#top">Back to top</a></p>
+</footer>
+</body>
+</html>

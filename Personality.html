@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personality | Gay Ann Clarke</title>
+  <link rel="stylesheet" href="../style.css" />
+
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --brand:#2563eb;
+      --border:#e5e7eb;
+      --shadow:0 10px 25px rgba(0,0,0,.08);
+      --radius:16px;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,#eef2ff 0%,var(--bg) 45%,#ffffff 100%);
+      line-height:1.65;
+    }
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(90deg, var(--purple-dark), var(--purple));
+  border-bottom: 2px solid var(--yellow);
+  backdrop-filter: none;
+}
+
+header h1,
+header nav a{
+  color: #fff !important;
+}
+
+header nav a.active{
+  color: var(--purple-dark) !important;
+}
+    nav ul{
+      list-style:none; display:flex; flex-wrap:wrap; gap:10px;
+      margin:0; padding:0; justify-content:flex-end;
+    }
+    nav a{
+      text-decoration:none; color:var(--text);
+      padding:8px 12px; border-radius:999px;
+      border:1px solid transparent; font-size:14px;
+    }
+    nav a:hover{border-color:var(--border); background:#fff;}
+    nav a.active{
+      background:rgba(37,99,235,.10);
+      border-color:rgba(37,99,235,.25);
+      color:var(--brand);
+      font-weight:800;
+    }
+
+    main{
+      max-width:1100px; margin:0 auto; padding:42px 16px 28px;
+    }
+    .page-title{
+      margin:0 0 8px;
+      font-size:clamp(26px,3vw,38px);
+      font-weight:900;
+      letter-spacing:-0.5px;
+    }
+    .page-subtitle{
+      margin:0 0 22px;
+      color:var(--muted);
+      max-width:75ch;
+      font-size:15px;
+    }
+
+    .section-title{
+      margin:26px 0 14px;
+      font-size:18px;
+      font-weight:900;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:14px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px;
+    }
+
+    /* Trait cards */
+    .trait{ grid-column: span 6; }
+    .trait h3{
+      margin:0 0 8px;
+      font-size:16px;
+      font-weight:900;
+      letter-spacing:-0.2px;
+    }
+    .trait p{ margin:0; font-size:15px; }
+
+    /* Hero + AI report */
+    .hero-section{ grid-column: span 7; }
+    .ai-report{ grid-column: span 5; }
+
+    blockquote{
+      margin:12px 0;
+      padding:14px;
+      border-left:4px solid var(--brand);
+      background:#f8fafc;
+      border-radius:12px;
+      color:#334155;
+      font-style:italic;
+    }
+
+    ul{ margin:10px 0 0 18px; padding:0; }
+    a{ color:var(--brand); font-weight:800; text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    footer{
+      max-width:1100px; margin:0 auto;
+      padding:20px 16px 30px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    @media (max-width: 900px){
+      .header-inner{ flex-direction:column; align-items:flex-start; }
+      nav ul{ justify-content:flex-start; }
+      .trait{ grid-column: span 12; }
+      .hero-section, .ai-report{ grid-column: span 12; }
+    }
+  </style>
+</head>
+
+<body>
+  <a id="top"></a>
+  <header>
+    <div class="navbar">
+      <a class="brand" href="index.html">
+        <img src="../Assets/logo.png" alt="Site logo">
+        <span>Gay Ann Clarke</span>
+      </a>
+      <h1>Welcome To Gay Ann's Domain</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Index</a></li>
+          <li><a href="Professional.html">Professional</a></li>
+          <li><a class="active" href="Personality.html">Personality</a></li>
+          <li><a href="Personal Development.html">Personal Development</a></li>
+          <li><a href="storyboard.html">Storyboard</a></li>
+          <li><a href="reference.html">Reference</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="page-title">Personality</h2>
+    <p class="page-subtitle">
+      Here are my personality traits, my hero, and my AI business report—presented in a clean, modern layout.
+    </p>
+
+    <!-- PERSONALITY TRAITS -->
+    <h3 class="section-title">Personality Traits</h3>
+
+    <section class="card" id="top3">
+      <h3 class="section-title">Top 3 Strongest Traits &amp; How They Affect My Academic Life</h3>
+      <ul>
+        <li><strong>Leadership:</strong> I take initiative in group assignments, help organise tasks, and keep the team focused on deadlines.</li>
+        <li><strong>Adaptability:</strong> When challenges come up (new topics, tight deadlines, or accessibility needs), I adjust my study plan and keep moving forward.</li>
+        <li><strong>Determination:</strong> I stay consistent with studying, submit work on time, and push through difficult subjects instead of giving up.</li>
+      </ul>
+      <p class="section-sub" style="margin-top:10px;">
+        These three traits support my goals at UTech by helping me stay organised, resilient, and committed to learning.
+      </p>
+    </section>
+
+
+
+    <section class="grid" id="personality">
+      <div class="card trait">
+        <h3>1. Leadership</h3>
+        <p>
+          My experience as a Vice Supervisor and business owner demonstrates my
+          leadership capabilities. I am confident in guiding teams, coordinating
+          operations, and ensuring tasks are completed efficiently. Leadership
+          allows me to take initiative in both academic and professional settings.
+        </p>
+      </div>
+
+      <div class="card trait">
+        <h3>2. Responsibility &amp; Professionalism</h3>
+        <p>
+          Working at the Tax Administration of Jamaica required confidentiality,
+          accuracy, and integrity when handling sensitive financial information.
+          This experience strengthened my professionalism and reinforced my commitment
+          to ethical standards in both cybersecurity and software development.
+        </p>
+      </div>
+
+      <div class="card trait">
+        <h3>3. Technical Competence</h3>
+        <p>
+          As a certified Network Support and Technical Support professional, I have
+          developed strong analytical and troubleshooting skills. My background in
+          computer servicing and system maintenance reflects my ability to work
+          effectively with hardware, software, and network systems.
+        </p>
+      </div>
+
+      <div class="card trait">
+        <h3>4. Entrepreneurial Mindset</h3>
+        <p>
+          Being certified in Micro-Entrepreneurship and operating as a software
+          developer has shaped my strategic thinking and problem-solving approach.
+          I am goal-oriented, innovative, and focused on creating solutions that
+          add value to businesses and communities.
+        </p>
+      </div>
+
+      <div class="card trait">
+        <h3>5. Community Commitment</h3>
+        <p>
+          My volunteer work and involvement in various organizations reflect my
+          dedication to service and community development. I believe in using my
+          knowledge and skills to make a positive impact beyond professional success.
+        </p>
+      </div>
+
+      <div class="card trait">
+        <h3>6. Resilience</h3>
+        <p>
+          My life experiences have strengthened my resilience. Overcoming medical
+          challenges, extended hospitalizations, academic interruptions, and social
+          discrimination required emotional endurance and mental strength. Rather
+          than allowing adversity to limit me, I used each challenge as motivation
+          to grow stronger intellectually and spiritually. This resilience enables
+          me to persist through academic, professional, and personal obstacles.
+        </p>
+      </div>
+
+      <div class="card trait">
+        <h3>7. Value-Driven Determination</h3>
+        <p>
+          My actions are guided by strong personal values, faith, and long-term
+          purpose. When faced with doubt, financial pressure, or uncertainty, I
+          rely on disciplined goal-setting and conviction to remain focused.
+          This principle-centered mindset influences my academic pursuits, career
+          ambitions, and leadership approach, ensuring that my decisions align
+          with integrity and vision.
+        </p>
+      </div>
+
+      <div class="card trait">
+        <h3>8. Courage</h3>
+        <p>
+          I have demonstrated courage by pursuing education and professional
+          advancement despite physical limitations, discrimination, and
+          financial obstacles. Rather than withdrawing from challenges,
+          I confront them with determination and confidence in my ability
+          to overcome.
+        </p>
+      </div>
+
+      <div class="card trait">
+        <h3>9. Self-Discipline</h3>
+        <p>
+          Achieving academic and professional milestones while managing
+          health-related challenges required consistent discipline. I have
+          developed the ability to remain focused, organized, and committed
+          to long-term goals even when circumstances are difficult.
+        </p>
+      </div>
+
+      <div class="card trait">
+        <h3>10. Adaptability</h3>
+        <p>
+          Life has required me to adapt physically, emotionally, and
+          academically. Transitioning through medical challenges and
+          educational interruptions strengthened my flexibility and
+          ability to adjust to new environments and expectations.
+        </p>
+      </div>
+    </section>
+
+    <!-- HERO + AI REPORT -->
+    <h3 class="section-title">My Hero &amp; AI Business Report</h3>
+
+    <section class="grid" id="hero">
+      <div class="card hero-section">
+        <h3>My Hero: My Mother</h3>
+
+        <blockquote>
+          "I can do all things through Christ who strengthens me." – Philippians 4:13
+        </blockquote>
+
+        <p><strong>Background:</strong>
+          My mother is the strongest person I know. From the moment I was diagnosed with cerebral palsy diplegia,
+          she made my life her mission. She carried me to school when I could not walk long distances.
+          She pushed my wheelchair up and down hills. She sat beside hospital beds through surgeries,
+          therapy sessions, and even during the year I was in a coma. When others doubted my future,
+          she never did.
+        </p>
+
+        <p style="margin-top:12px;"><strong>Why She Is My Hero:</strong>
+          My mother embodies resilience, sacrifice, and unconditional love.
+          When my father walked away because he felt he could not manage raising a child with a disability,
+          she stayed. She fought for my education. She encouraged me when I felt discouraged.
+          She believed in my ability even when my body felt weak and society saw limitations.
+
+          Because of her strength, I learned perseverance. Because of her faith, I developed courage.
+          Because of her sacrifices, I am pursuing my degree in Computer Network &amp; Cyber Security today.
+          That scripture — Philippians 4:13 — is not just a verse to me it is a declaration over my life.
+          It represents the mindset she helped instill in me: with faith, discipline, and determination,
+          nothing is impossible.
+        </p>
+      </div>
+
+      <div class="card ai-report">
+        <h3>AI Business Report 2026</h3>
+
+        <p><strong>My Chosen AI Business Idea:</strong> Personalized Learning AI Tutors</p>
+
+        <p style="margin-top:10px;"><strong>Business Concept:</strong>
+          The Personalized Learning AI Tutor is an intelligent system designed to provide
+          customized academic support to students based on their learning style, pace, strengths,
+          and weaknesses. Using artificial intelligence, the platform would analyze performance
+          data and adapt lesson delivery in real time. This would benefit students who struggle
+          in traditional classroom settings or require additional reinforcement.
+        </p>
+
+        <p style="margin-top:10px;"><strong>Application in My World:</strong>
+          As a Computer Network &amp; Cyber Security student, I understand how technology can solve real-world problems.
+          Many students face barriers such as disabilities, financial hardship, or limited access to support.
+          This AI solution could create inclusive educational opportunities and support students
+          who need flexible learning environments.
+        </p>
+
+        <p style="margin-top:10px;"><strong>Ethical Concerns:</strong></p>
+        <ul>
+          <li>Privacy and protection of student data</li>
+          <li>Potential job displacement of educators</li>
+          <li>Bias in AI algorithms</li>
+          <li>Over-reliance on technology</li>
+        </ul>
+
+        <p style="margin-top:12px;"><strong>Proposed Solutions:</strong></p>
+        <ul>
+          <li>Implement strong cybersecurity and encryption protocols</li>
+          <li>Ensure compliance with data protection regulations</li>
+          <li>Design AI systems to assist teachers rather than replace them</li>
+          <li>Conduct regular audits to reduce algorithmic bias</li>
+        </ul>
+
+        <p style="margin-top:12px;">
+          Reference Inspiration:
+          <a href="https://clickup.com/blog/ai-business-ideas/" target="_blank" rel="noopener noreferrer">
+            AI Business Ideas 2026
+          </a>
+        </p>
+
+        <p style="margin-top:12px;">
+          Required Blog Source (AI Businesses of 2025):
+          <a href="https://www.clickup.com/blog/ai-business-ideas/" target="_blank" rel="noopener noreferrer">
+            AI Businesses / AI Ideas (2025-style list)
+          </a>
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong>Actual App Example:</strong> Khan Academy’s <em>Khanmigo</em> is an AI tutor that supports learning and practice.
+          Visit: <a href="https://www.khanmigo.ai/" target="_blank" rel="noopener noreferrer">Khanmigo</a>
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Gay Ann Clarke</p>
+  
+    <p><a href="#top">Back to top</a></p>
+</footer>
+</body>
+</html>
